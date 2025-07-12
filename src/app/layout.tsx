@@ -51,13 +51,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: [
       { url: "/favicon.png", sizes: "180x180", type: "image/png" }
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/favicon.png",
-        color: "#3b82f6"
-      }
     ]
   },
 
@@ -174,8 +167,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <script
           type="application/ld+json"

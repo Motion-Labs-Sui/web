@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://motionlabs.dev'),
+  metadataBase: new URL('https://motionlabs.vercel.app'),
   title: {
     default: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
     template: "%s | Motion Labs"
@@ -59,13 +59,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://motionlabs.dev",
+    url: "https://motionlabs.vercel.app",
     siteName: "Motion Labs",
     title: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
     description: "Build faster, debug smarter, and deploy with confidence using Motion Labs' AI-powered development tools for the Sui blockchain ecosystem. Featuring Sui MCP and comprehensive developer platforms.",
     images: [
       {
-        url: "https://motionlabs.dev/banner.png",
+        url: "https://motionlabs.vercel.app/banner.png",
         width: 2098,
         height: 1271,
         alt: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     description: "Build faster, debug smarter, and deploy with confidence using AI-powered development tools for the Sui blockchain ecosystem.",
     images: [
       {
-        url: "https://motionlabs.dev/banner.png",
+        url: "https://motionlabs.vercel.app/banner.png",
         alt: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
       }
     ],
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://motionlabs.dev",
+    canonical: "https://motionlabs.vercel.app",
   },
 
   other: {
@@ -130,9 +130,9 @@ export default function RootLayout({
     "@type": "Organization",
     "name": "Motion Labs",
     "description": "AI-powered development tools for the Sui blockchain ecosystem",
-    "url": "https://motionlabs.dev",
-    "logo": "https://motionlabs.dev/banner.png",
-    "image": "https://motionlabs.dev/banner.png",
+    "url": "https://motionlabs.vercel.app",
+    "logo": "https://motionlabs.vercel.app/banner.png",
+    "image": "https://motionlabs.vercel.app/banner.png",
     "foundingDate": "2024",
     "sameAs": [
       "https://github.com/motion-labs",
@@ -141,7 +141,7 @@ export default function RootLayout({
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "hello@motionlabs.dev",
+      "email": "hello@motionlabs.vercel.app",
       "contactType": "customer service"
     },
     "address": {

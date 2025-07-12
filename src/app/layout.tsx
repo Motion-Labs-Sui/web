@@ -133,7 +133,7 @@ export default function RootLayout({
     "url": "https://motionlabs.vercel.app",
     "logo": "https://motionlabs.vercel.app/banner.png",
     "image": "https://motionlabs.vercel.app/banner.png",
-    "foundingDate": "2024",
+    "foundingDate": "2025",
     "sameAs": [
       "https://github.com/motion-labs",
       "https://twitter.com/motionlabs",

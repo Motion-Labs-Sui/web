@@ -50,7 +50,7 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      quarter: "Q1 2024",
+      quarter: "Q3 2025",
       title: "Foundation",
       status: "completed",
       items: [
@@ -60,7 +60,7 @@ export default function AboutPage() {
       ]
     },
     {
-      quarter: "Q2 2024",
+      quarter: "Q3 2025",
       title: "Sui MCP Alpha",
       status: "completed",
       items: [
@@ -70,7 +70,7 @@ export default function AboutPage() {
       ]
     },
     {
-      quarter: "Q3 2024",
+      quarter: "Q4 2025",
       title: "Public Beta",
       status: "current",
       items: [
@@ -80,7 +80,7 @@ export default function AboutPage() {
       ]
     },
     {
-      quarter: "Q4 2024",
+      quarter: "Q4 2025",
       title: "Production Release",
       status: "upcoming",
       items: [
@@ -90,7 +90,7 @@ export default function AboutPage() {
       ]
     },
     {
-      quarter: "Q1 2025",
+      quarter: "Q1 2026",
       title: "Ecosystem Expansion",
       status: "planned",
       items: [

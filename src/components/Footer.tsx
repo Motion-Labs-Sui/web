@@ -146,7 +146,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border">
           <div className="flex items-center space-x-6 mb-4 md:mb-0">
             <p className="text-muted-foreground text-sm">
-              &copy; 2024 Motion Labs. All rights reserved.
+              &copy; 2025 Motion Labs. All rights reserved.
             </p>
           </div>
           

@@ -49,8 +49,8 @@ export default function ProjectsPage() {
         demo: '/demo/sui-mcp',
         download: '/download/sui-mcp'
       },
-      releaseDate: '2024-03-15',
-      lastUpdate: '2024-12-01'
+      releaseDate: '2025-03-15',
+      lastUpdate: '2025-12-01'
     },
     {
       id: 'project-alpha',
@@ -83,8 +83,8 @@ export default function ProjectsPage() {
         demo: '/demo/project-alpha',
         download: '/download/project-alpha'
       },
-      releaseDate: '2024-06-20',
-      lastUpdate: '2024-11-28'
+      releaseDate: '2025-06-20',
+      lastUpdate: '2025-11-28'
     },
     {
       id: 'project-beta',
@@ -118,7 +118,7 @@ export default function ProjectsPage() {
         download: '/download/project-beta'
       },
       releaseDate: '2025-02-15',
-      lastUpdate: '2024-11-30'
+      lastUpdate: '2025-11-30'
     }
   ];
 

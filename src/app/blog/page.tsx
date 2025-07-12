@@ -27,7 +27,7 @@ export default function BlogPage() {
       avatar: '/images/team/alex.jpg'
     },
     category: 'Product Updates',
-    publishDate: '2024-12-01',
+    publishDate: '2025-12-01',
     readTime: '8 min read',
     image: '/images/blog/sui-mcp-v2.jpg',
     tags: ['Sui MCP', 'AI', 'Product Launch', 'Developer Tools']
@@ -44,7 +44,7 @@ export default function BlogPage() {
         avatar: '/images/team/sarah.jpg'
       },
       category: 'Development',
-      publishDate: '2024-11-28',
+      publishDate: '2025-11-28',
       readTime: '6 min read',
       image: '/images/blog/ai-code-review.jpg',
       tags: ['AI', 'Code Review', 'Best Practices']
@@ -59,7 +59,7 @@ export default function BlogPage() {
         avatar: '/images/team/marcus.jpg'
       },
       category: 'Tutorial',
-      publishDate: '2024-11-25',
+      publishDate: '2025-11-25',
       readTime: '10 min read',
       image: '/images/blog/move-optimization.jpg',
       tags: ['Sui Move', 'Performance', 'Smart Contracts']
@@ -74,7 +74,7 @@ export default function BlogPage() {
         avatar: '/images/team/elena.jpg'
       },
       category: 'Architecture',
-      publishDate: '2024-11-22',
+      publishDate: '2025-11-22',
       readTime: '12 min read',
       image: '/images/blog/scalable-dapps.jpg',
       tags: ['dApps', 'Architecture', 'Scalability']
@@ -89,7 +89,7 @@ export default function BlogPage() {
         avatar: '/images/team/alex.jpg'
       },
       category: 'Company News',
-      publishDate: '2024-11-20',
+      publishDate: '2025-11-20',
       readTime: '5 min read',
       image: '/images/blog/series-a.jpg',
       tags: ['Funding', 'Company News', 'Growth']
@@ -104,7 +104,7 @@ export default function BlogPage() {
         avatar: '/images/team/marcus.jpg'
       },
       category: 'Tutorial',
-      publishDate: '2024-11-18',
+      publishDate: '2025-11-18',
       readTime: '8 min read',
       image: '/images/blog/debugging-contracts.jpg',
       tags: ['Debugging', 'Smart Contracts', 'Development']
@@ -119,7 +119,7 @@ export default function BlogPage() {
         avatar: '/images/team/sarah.jpg'
       },
       category: 'Industry Insights',
-      publishDate: '2024-11-15',
+      publishDate: '2025-11-15',
       readTime: '7 min read',
       image: '/images/blog/future-blockchain.jpg',
       tags: ['AI', 'Automation', 'Future', 'Industry']

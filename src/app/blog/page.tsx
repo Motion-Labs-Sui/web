@@ -5,12 +5,8 @@ import {
   BookOpen, 
   Calendar, 
   Clock, 
-  User,
   ArrowRight,
-  Tag,
   Search,
-  Filter,
-  TrendingUp,
   Star
 } from 'lucide-react';
 import Image from 'next/image';

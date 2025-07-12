@@ -6,17 +6,12 @@ import {
   Code, 
   ExternalLink, 
   Github, 
-  Calendar,
-  Users,
-  Star,
-  GitBranch,
   Download,
   CheckCircle,
   Clock,
   Rocket
 } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import PhysicsBackground from '@/components/PhysicsBackground';
@@ -183,7 +178,7 @@ export default function ProjectsPage() {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover the cutting-edge tools and platforms we're building to revolutionize 
+              Discover the cutting-edge tools and platforms we&apos;re building to revolutionize 
               Sui blockchain development. From AI-powered coding assistants to comprehensive 
               analytics platforms.
             </p>

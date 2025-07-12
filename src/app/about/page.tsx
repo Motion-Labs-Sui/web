@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { 
   Atom, 
-  Zap, 
   Code, 
   Users, 
   Target, 
@@ -182,7 +181,7 @@ export default function AboutPage() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 We envision a world where building on blockchain is as intuitive as traditional 
                 web development, where AI assists developers at every step, and where innovation 
-                isn't limited by technical barriers.
+                isn&apos;t limited by technical barriers.
               </p>
             </motion.div>
             
@@ -199,7 +198,7 @@ export default function AboutPage() {
                 applications rather than wrestling with infrastructure complexity.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We're creating the developer experience that will onboard the next million 
+                We&apos;re creating the developer experience that will onboard the next million 
                 blockchain developers, making Sui the platform of choice for the next 
                 generation of decentralized applications.
               </p>

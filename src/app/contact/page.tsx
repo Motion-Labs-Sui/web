@@ -9,9 +9,7 @@ import {
   Send,
   MessageSquare,
   Github,
-  Twitter,
-  Linkedin,
-  Globe
+  Twitter
 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -76,7 +74,7 @@ export default function ContactPage() {
   const faqs = [
     {
       question: 'How can I get started with Sui MCP?',
-      answer: 'You can download Sui MCP from our GitHub repository or install it directly through your IDE\'s extension marketplace. Check out our documentation for step-by-step setup instructions.'
+      answer: 'You can download Sui MCP from our GitHub repository or install it directly through your IDE&apos;s extension marketplace. Check out our documentation for step-by-step setup instructions.'
     },
     {
       question: 'Do you offer enterprise support?',
@@ -84,7 +82,7 @@ export default function ContactPage() {
     },
     {
       question: 'Is Motion Labs hiring?',
-      answer: 'We\'re always looking for talented individuals to join our team. Check out our careers page for current openings or reach out to us directly.'
+      answer: 'We&apos;re always looking for talented individuals to join our team. Check out our careers page for current openings or reach out to us directly.'
     },
     {
       question: 'How can I contribute to your open-source projects?',
@@ -123,7 +121,7 @@ export default function ContactPage() {
             
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Have questions about our products? Want to discuss a partnership? 
-              Or just want to say hello? We'd love to hear from you.
+              Or just want to say hello? We&apos;d love to hear from you.
             </p>
           </motion.div>
         </div>
@@ -176,7 +174,7 @@ export default function ContactPage() {
             >
               <h2 className="text-3xl font-bold mb-6">Send us a Message</h2>
               <p className="text-muted-foreground mb-8">
-                Fill out the form below and we'll get back to you as soon as possible.
+                Fill out the form below and we&apos;ll get back to you as soon as possible.
               </p>
               
               <form className="space-y-6">

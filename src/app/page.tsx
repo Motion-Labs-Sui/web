@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { 
   ChevronRight,
   Zap,
@@ -17,9 +17,9 @@ import Footer from '@/components/Footer';
 import PhysicsBackground from '@/components/PhysicsBackground';
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false);
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 1000], [0, -200]);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -71,30 +71,53 @@ export default function Home() {
     </motion.div>
   );
 
-  const ParticleField = () => (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {[...Array(20)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-1 h-1 bg-blue-500 rounded-full opacity-30"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          animate={{
-            y: [0, -100, 0],
-            x: [0, Math.random() * 50 - 25, 0],
-            opacity: [0.3, 0.7, 0.3],
-          }}
-          transition={{
-            duration: 8 + Math.random() * 4,
-            repeat: Infinity,
-            delay: Math.random() * 5,
-          }}
-        />
-      ))}
-    </div>
-  );
+  const ParticleField = () => {
+    if (!mounted) return null;
+
+    // Generate deterministic positions based on index
+    const particles = Array.from({ length: 20 }, (_, i) => {
+      // Use a simple seeded random function based on index
+      const seed = i * 123.456;
+      const left = ((seed * 9301 + 49297) % 233280) / 2332.8;
+      const top = ((seed * 9301 + 49297 + 1000) % 233280) / 2332.8;
+      const xOffset = ((seed * 7 + 13) % 50) - 25;
+      const duration = 8 + ((seed * 11) % 4);
+      const delay = (seed * 17) % 5;
+      
+      return {
+        left: left % 100,
+        top: top % 100,
+        xOffset,
+        duration,
+        delay
+      };
+    });
+
+    return (
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {particles.map((particle, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-blue-500 rounded-full opacity-30"
+            style={{
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
+            }}
+            animate={{
+              y: [0, -100, 0],
+              x: [0, particle.xOffset, 0],
+              opacity: [0.3, 0.7, 0.3],
+            }}
+            transition={{
+              duration: particle.duration,
+              repeat: Infinity,
+              delay: particle.delay,
+            }}
+          />
+        ))}
+      </div>
+    );
+  };
 
   const smoothScrollTo = (elementId: string) => {
     const element = document.getElementById(elementId);

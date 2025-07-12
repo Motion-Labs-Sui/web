@@ -3,22 +3,17 @@
 import { motion } from 'framer-motion';
 import { 
   Network, 
-  Zap, 
   Code, 
   Users, 
   Globe, 
   ArrowRight,
-  ExternalLink,
   CheckCircle,
   Star,
   Layers,
   Database,
-  Shield,
   Rocket,
-  Brain,
-  Cpu
+  Brain
 } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';

@@ -21,8 +21,8 @@ export default function ContactPage() {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
       description: 'Send us an email anytime',
-      contact: 'hello@motionlabs.dev',
-      link: 'mailto:hello@motionlabs.dev'
+      contact: 'motion.eco@proton.me',
+      link: 'mailto:motion.eco@proton.me'
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
@@ -211,7 +211,7 @@ export default function ContactPage() {
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="john@example.com"
+                    placeholder="motion.eco@proton.me"
                   />
                 </div>
                 

@@ -141,7 +141,7 @@ export default function RootLayout({
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "hello@motionlabs.vercel.app",
+      "email": "motion.eco@proton.me",
       "contactType": "customer service"
     },
     "address": {

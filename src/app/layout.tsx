@@ -72,9 +72,9 @@ export const metadata: Metadata = {
     description: "Build faster, debug smarter, and deploy with confidence using Motion Labs' AI-powered development tools for the Sui blockchain ecosystem. Featuring Sui MCP and comprehensive developer platforms.",
     images: [
       {
-        url: "/banner.png",
-        width: 1200,
-        height: 630,
+        url: "https://motionlabs.dev/banner.png",
+        width: 2098,
+        height: 1271,
         alt: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
         type: "image/png",
       },
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     description: "Build faster, debug smarter, and deploy with confidence using AI-powered development tools for the Sui blockchain ecosystem.",
     images: [
       {
-        url: "/banner.png",
+        url: "https://motionlabs.dev/banner.png",
         alt: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
       }
     ],
@@ -174,6 +174,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

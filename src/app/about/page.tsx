@@ -17,36 +17,36 @@ import Footer from '@/components/Footer';
 import PhysicsBackground from '@/components/PhysicsBackground';
 
 export default function AboutPage() {
-  const teamMembers = [
-    {
-      name: "Alex Chen",
-      role: "Founder & CEO",
-      bio: "Former Sui Labs engineer with 8+ years in blockchain development",
-      image: "/images/team/alex.jpg",
-      social: { twitter: "#", github: "#", linkedin: "#" }
-    },
-    {
-      name: "Sarah Kim",
-      role: "CTO",
-      bio: "AI/ML expert with experience at OpenAI and Google DeepMind",
-      image: "/images/team/sarah.jpg",
-      social: { twitter: "#", github: "#", linkedin: "#" }
-    },
-    {
-      name: "Marcus Johnson",
-      role: "Lead Developer",
-      bio: "Full-stack developer specializing in developer tools and UX",
-      image: "/images/team/marcus.jpg",
-      social: { twitter: "#", github: "#", linkedin: "#" }
-    },
-    {
-      name: "Elena Rodriguez",
-      role: "Head of Product",
-      bio: "Product strategist with focus on developer experience",
-      image: "/images/team/elena.jpg",
-      social: { twitter: "#", github: "#", linkedin: "#" }
-    }
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: "Alex Chen",
+  //     role: "Founder & CEO",
+  //     bio: "Former Sui Labs engineer with 8+ years in blockchain development",
+  //     image: "/images/team/alex.jpg",
+  //     social: { twitter: "#", github: "#", linkedin: "#" }
+  //   },
+  //   {
+  //     name: "Sarah Kim",
+  //     role: "CTO",
+  //     bio: "AI/ML expert with experience at OpenAI and Google DeepMind",
+  //     image: "/images/team/sarah.jpg",
+  //     social: { twitter: "#", github: "#", linkedin: "#" }
+  //   },
+  //   {
+  //     name: "Marcus Johnson",
+  //     role: "Lead Developer",
+  //     bio: "Full-stack developer specializing in developer tools and UX",
+  //     image: "/images/team/marcus.jpg",
+  //     social: { twitter: "#", github: "#", linkedin: "#" }
+  //   },
+  //   {
+  //     name: "Elena Rodriguez",
+  //     role: "Head of Product",
+  //     bio: "Product strategist with focus on developer experience",
+  //     image: "/images/team/elena.jpg",
+  //     social: { twitter: "#", github: "#", linkedin: "#" }
+  //   }
+  // ];
 
   const milestones = [
     {
@@ -247,7 +247,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-secondary/30 relative z-10">
+      {/* <section className="py-20 bg-secondary/30 relative z-10">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -287,7 +287,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Roadmap */}
       <section id="roadmap" className="py-20 relative z-10">

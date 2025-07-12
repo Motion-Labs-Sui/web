@@ -14,49 +14,116 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Motion Labs - AI-Powered Development Tools for Sui",
-  description: "Motion ecosystem on Sui. Build faster, debug smarter, and deploy with confidence using AI-powered development tools for the Sui blockchain ecosystem.",
-  keywords: ["Motion Labs", "Sui", "Blockchain", "AI", "Development Tools", "Developer Tools"],
-  authors: [{ name: "Motion Labs" }],
+  metadataBase: new URL('https://motionlabs.dev'),
+  title: {
+    default: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
+    template: "%s | Motion Labs"
+  },
+  description: "Motion Labs builds AI-powered development tools for the Sui blockchain ecosystem. Featuring Sui MCP, intelligent code completion, automated debugging, and comprehensive developer platforms that accelerate blockchain development.",
+  keywords: [
+    "Motion Labs",
+    "Sui blockchain",
+    "AI development tools",
+    "Sui MCP",
+    "blockchain development",
+    "smart contracts",
+    "Move programming",
+    "developer tools",
+    "AI code completion",
+    "blockchain debugging",
+    "Sui ecosystem",
+    "decentralized applications",
+    "dApp development",
+    "Web3 tools",
+    "blockchain analytics"
+  ],
+  authors: [{ name: "Motion Labs", url: "https://motionlabs.dev" }],
   creator: "Motion Labs",
   publisher: "Motion Labs",
+  category: "Technology",
+  classification: "Blockchain Development Tools",
+  
   icons: {
-    icon: "/brand/logo-01.png",
-    shortcut: "/brand/logo-01.png",
-    apple: "/brand/logo-01.png",
+    icon: [
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" }
+    ],
+    shortcut: "/favicon.png",
+    apple: [
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" }
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/favicon.png",
+        color: "#3b82f6"
+      }
+    ]
   },
+
+  manifest: "/manifest.json",
+
   openGraph: {
-    title: "Motion Labs - AI-Powered Development Tools for Sui",
-    description: "Motion ecosystem on Sui. Build faster, debug smarter, and deploy with confidence.",
+    type: "website",
+    locale: "en_US",
     url: "https://motionlabs.dev",
     siteName: "Motion Labs",
+    title: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
+    description: "Build faster, debug smarter, and deploy with confidence using Motion Labs' AI-powered development tools for the Sui blockchain ecosystem. Featuring Sui MCP and comprehensive developer platforms.",
     images: [
       {
-        url: "/brand/logo-01.png",
+        url: "/banner.png",
         width: 1200,
         height: 630,
-        alt: "Motion Labs",
+        alt: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
+        type: "image/png",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Motion Labs - AI-Powered Development Tools for Sui",
-    description: "Motion ecosystem on Sui. Build faster, debug smarter, and deploy with confidence.",
-    images: ["/brand/logo-01.png"],
+    site: "@motionlabs",
+    creator: "@motionlabs",
+    title: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
+    description: "Build faster, debug smarter, and deploy with confidence using AI-powered development tools for the Sui blockchain ecosystem.",
+    images: [
+      {
+        url: "/banner.png",
+        alt: "Motion Labs - AI-Powered Development Tools for Sui Blockchain",
+      }
+    ],
   },
+
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
+
+  alternates: {
+    canonical: "https://motionlabs.dev",
+  },
+
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-title": "Motion Labs",
+    "mobile-web-app-capable": "yes",
+    "msapplication-TileColor": "#3b82f6",
+    "theme-color": "#3b82f6",
   },
 };
 
@@ -65,8 +132,55 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Motion Labs",
+    "description": "AI-powered development tools for the Sui blockchain ecosystem",
+    "url": "https://motionlabs.dev",
+    "logo": "https://motionlabs.dev/banner.png",
+    "image": "https://motionlabs.dev/banner.png",
+    "foundingDate": "2024",
+    "sameAs": [
+      "https://github.com/motion-labs",
+      "https://twitter.com/motionlabs",
+      "https://discord.gg/motionlabs"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@motionlabs.dev",
+      "contactType": "customer service"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "name": "Sui MCP",
+          "description": "AI-powered development protocol for Sui blockchain",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Cross-platform"
+        }
+      }
+    ]
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased font-sans`}
       >

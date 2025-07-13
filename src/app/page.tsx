@@ -194,8 +194,8 @@ export default function Home() {
               
               <motion.a
                 href="https://github.com/motion-labs"
-                target="_blank"
-                rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                 className="px-8 py-4 border border-border rounded-full hover:bg-accent motion-transition hover-lift flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -302,7 +302,7 @@ export default function Home() {
               >
                 <div className="bg-card border border-border rounded-2xl p-6 hover-lift motion-transition">
                   <div className="relative mb-4 rounded-xl overflow-hidden">
-                    <Image
+          <Image
                       src={project.image}
                       alt={project.title}
                       width={400}

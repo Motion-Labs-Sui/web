@@ -90,7 +90,7 @@
   --color-ring: var(--ring);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
-}
+  }
 
 * {
   border-color: var(--border);
